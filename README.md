@@ -36,7 +36,7 @@ $ . bin/activate
 $ git clone https://github.com/datadesk/osm-quiet-la.git repo
 ```
 
-Create a symbolic link installing Quite LA inside Mapbox's project directory. You'll need to substitute your path below. 
+Create a symbolic link by installing Quite LA inside Mapbox's project directory. You'll need to substitute your path below. 
 
 ```bash
 $ ln -s /path/to/this/repo/quiet-la /path/to/Documents/MapBox/project/
@@ -46,7 +46,7 @@ Install [PostgreSQL](http://www.postgresql.org/) with the [PostGIS](http://postg
 
 Next you need to download OpenStreetMap data covering the area you're going to map. I'm sticking with California, but you could use this system to map any of the 50 states that make up America.
 
-I've condensed all the steps into [a Fabric function](https://github.com/datadesk/osm-quiet-la/blob/master/fabfile.py#L35) in this repository's fabfile. Besides Fabric, it requires the OpenStreetMap utility for loading data into PostgresSQL. On Ubuntu, you can install them like so.
+I've condensed all the steps into [a Fabric function](https://github.com/datadesk/osm-quiet-la/blob/master/fabfile.py#L35) in this repository's fabfile. Besides Fabric, it requires the OpenStreetMap utility for loading data into PostgresSQL. On Ubuntu, you can install them using the following method.
 
 ```bash
 $ sudo apt-get install fabric
